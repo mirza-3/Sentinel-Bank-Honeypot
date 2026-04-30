@@ -1,3 +1,11 @@
+
+
+https://github.com/user-attachments/assets/79fd5fd3-ea4e-4303-b314-6e9b20345993
+
+
+
+https://github.com/user-attachments/assets/089d15aa-1195-4116-bd97-b2bfbf994e18
+
 # Sentinel-Bank: A Full-Stack Deception & Intrusion Monitoring Framework
 
 ## 🎯 Project Overview
@@ -16,3 +24,7 @@ Sentinel-Bank is a cybersecurity honeypot system designed to simulate a real-wor
 
 ## 📈 Impact
 Demonstrates the ability to build a functional end-to-end security monitoring solution that reduces "Time-to-Detect" for reconnaissance attempts.
+
+### video Demo
+
+https://github.com/mirza-3/Sentinel-Bank-Honeypot/blob/main/Honeypotvideo.mp4
