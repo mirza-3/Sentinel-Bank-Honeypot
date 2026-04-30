@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Personal Banking - ZU-BANK{% endblock %}
+
+{% block extra_css %}
+<style>
+    h1 { color: #2563eb; margin-bottom: 30px; font-size: 42px; }
+    
+    .intro {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 40px 0;
+    }
+    
+    .service-card {
+        background: white;
+        border: 2px solid #e9ecef;
+        border-radius: 8px;
+        padding: 30px;
+        text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    
+    .service-card:hover {
+        border-color: #2563eb;
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
+        transform: translateY(-5px);
+    }
+    
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        color: #2563eb;
+        margin-bottom: 10px;
+    }
+    
+    .service-card p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .services {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Personal Banking Services</h1>
+<p class="intro">Explore our comprehensive suite of personal banking products and services designed for your financial needs.</p>
+
+<div class="services">
+    <div class="service-card">
+        <div class="service-icon">💳</div>
+        <h3>Debit Cards</h3>
+        <p>Advanced debit cards with cashback rewards and international acceptance.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3>Savings Accounts</h3>
+        <p>Earn attractive interest rates on your savings with flexible withdrawal options.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">📈</div>
+        <h3>Investment Plans</h3>
+        <p>Grow your wealth with our diverse investment portfolio options.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Home Loans</h3>
+        <p>Flexible home loan solutions with competitive interest rates.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🚗</div>
+        <h3>Auto Loans</h3>
+        <p>Quick and easy auto financing for your dream vehicle.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Insurance</h3>
+        <p>Comprehensive insurance products to protect your assets and family.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}Information - ZU-BANK{% endblock %}
+
+{% block extra_css %}
+<style>
+    h1 { color: #2563eb; margin-bottom: 30px; font-size: 42px; }
+    h2 { color: #2563eb; margin: 40px 0 20px; }
+    
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 30px 0;
+    }
+    
+    .info-box {
+        background: #f9fafb;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #2563eb;
+        transition: all 0.3s;
+    }
+    
+    .info-box:hover {
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.1);
+        transform: translateY(-3px);
+    }
+    
+    .info-box h3 {
+        color: #2563eb;
+        margin-bottom: 10px;
+    }
+    
+    .info-box p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .contact-box {
+        max-width: 500px;
+    }
+    
+    .contact-box p {
+        margin-bottom: 12px;
+        color: #333;
+    }
+    
+    .contact-box strong {
+        color: #2563eb;
+    }
+    
+    @media (max-width: 768px) {
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Information & Resources</h1>
+
+<h2>Security & Privacy</h2>
+<div class="info-grid">
+    <div class="info-box">
+        <h3>🔐 Data Protection</h3>
+        <p>Your personal data is encrypted and protected using the latest security protocols. We comply with international data protection regulations.</p>
+    </div>
+    <div class="info-box">
+        <h3>🛡️ Fraud Prevention</h3>
+        <p>Advanced fraud detection systems monitor all transactions 24/7 to protect your account from unauthorized access.</p>
+    </div>
+</div>
+
+<h2>Help & Support</h2>
+<div class="info-grid">
+    <div class="info-box">
+        <h3>📞 Customer Support</h3>
+        <p>Our support team is available 24/7 to assist you with any questions or concerns via phone, email, or live chat.</p>
+    </div>
+    <div class="info-box">
+        <h3>❓ FAQ</h3>
+        <p>Find answers to frequently asked questions about accounts, transactions, security, and more in our comprehensive FAQ section.</p>
+    </div>
+    <div class="info-box">
+        <h3>📱 Mobile App</h3>
+        <p>Download our mobile banking app to manage your accounts, transfer funds, and pay bills on the go.</p>
+    </div>
+    <div class="info-box">
+        <h3>📚 Knowledge Base</h3>
+        <p>Access our extensive library of guides, tutorials, and resources to help you get the most out of banking with ZU-BANK.</p>
+    </div>
+</div>
+
+<h2>Contact Information</h2>
+<div class="info-box contact-box">
+    <p><strong>Email:</strong> support@zu-bank.com</p>
+    <p><strong>Phone:</strong> +1-800-ZU-BANK</p>
+    <p><strong>Hours:</strong> Available 24/7</p>
+    <p><strong>Address:</strong> 123 Banking Plaza, Financial District, USA</p>
+</div>
+{% endblock %}

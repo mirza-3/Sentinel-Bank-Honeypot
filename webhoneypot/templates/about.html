@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - ZU-BANK{% endblock %}
+
+{% block extra_css %}
+<style>
+    h1 { color: #2563eb; margin-bottom: 30px; font-size: 42px; }
+    h2 { color: #2563eb; margin: 40px 0 20px; }
+    p { line-height: 1.8; color: #666; margin-bottom: 15px; }
+    
+    .card {
+        background: #f0f3ff;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #2563eb;
+        margin: 20px 0;
+    }
+    
+    .card ul {
+        margin-top: 10px;
+        list-style-position: inside;
+    }
+    
+    .card li {
+        color: #666;
+        margin-bottom: 8px;
+    }
+    
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 40px 0;
+    }
+    
+    .stat-box {
+        background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .stats {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>About ZU-BANK</h1>
+<p>ZU-BANK is a leading digital banking solution providing secure and innovative financial services to millions of customers worldwide.</p>
+
+<h2>Our Mission</h2>
+<p>To revolutionize banking by providing accessible, secure, and user-friendly financial solutions to every customer.</p>
+
+<h2>Our Vision</h2>
+<p>To become the most trusted digital banking platform in the world, empowering individuals and businesses to achieve their financial goals.</p>
+
+<div class="card">
+    <strong>🎯 Core Values:</strong>
+    <ul>
+        <li>Security & Trust</li>
+        <li>Innovation & Excellence</li>
+        <li>Customer-Centric Service</li>
+        <li>Transparency & Integrity</li>
+    </ul>
+</div>
+
+<div class="stats">
+    <div class="stat-box">
+        <div class="stat-number">50M+</div>
+        <p>Active Users</p>
+    </div>
+    <div class="stat-box">
+        <div class="stat-number">150+</div>
+        <p>Countries</p>
+    </div>
+    <div class="stat-box">
+        <div class="stat-number">24/7</div>
+        <p>Support</p>
+    </div>
+</div>
+
+<h2>History</h2>
+<p>Founded in 2010, ZU-BANK has grown to become one of the most innovative banking institutions, serving customers with cutting-edge financial technology and unparalleled security.</p>
+{% endblock %}

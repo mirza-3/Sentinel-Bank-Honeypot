@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}Careers - ZU-BANK{% endblock %}
+
+{% block extra_css %}
+<style>
+    h1 { color: #2563eb; margin-bottom: 30px; font-size: 42px; }
+    h2 { color: #2563eb; margin: 40px 0 20px; }
+    
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .benefit-item {
+        background: #f0f3ff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        transition: all 0.3s;
+    }
+    
+    .benefit-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+    }
+    
+    .benefit-item > div:first-child {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .benefit-item h3 {
+        color: #2563eb;
+        margin-bottom: 5px;
+    }
+    
+    .benefit-item p {
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .jobs {
+        display: grid;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .job-card {
+        background: white;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 25px;
+        transition: all 0.3s;
+    }
+    
+    .job-card:hover {
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.1);
+        border-color: #2563eb;
+    }
+    
+    .job-title {
+        color: #2563eb;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    
+    .job-meta {
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .job-desc {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    .btn-apply {
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: background 0.3s;
+    }
+    
+    .btn-apply:hover {
+        background: #1d47a5;
+    }
+    
+    .contact-hr {
+        margin-top: 30px;
+        padding: 20px;
+        background: #f9fafb;
+        border-radius: 8px;
+    }
+    
+    @media (max-width: 768px) {
+        .benefits {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Join Our Team</h1>
+<p style="font-size: 16px; margin-bottom: 30px;">Be part of a dynamic team revolutionizing the banking industry with innovative technology and exceptional service.</p>
+
+<h2>Why Work at ZU-BANK?</h2>
+<div class="benefits">
+    <div class="benefit-item">
+        <div>🌟</div>
+        <h3>Career Growth</h3>
+        <p>Unlimited opportunities for professional development</p>
+    </div>
+    <div class="benefit-item">
+        <div>💰</div>
+        <h3>Competitive Pay</h3>
+        <p>Industry-leading compensation packages</p>
+    </div>
+    <div class="benefit-item">
+        <div>🏆</div>
+        <h3>Great Culture</h3>
+        <p>Collaborative and inclusive work environment</p>
+    </div>
+</div>
+
+<h2>Open Positions</h2>
+<div class="jobs">
+    <div class="job-card">
+        <div class="job-title">Senior Software Engineer</div>
+        <div class="job-meta">📍 Remote | 💼 Full-time</div>
+        <div class="job-desc">We're looking for an experienced software engineer to lead our backend infrastructure team. You'll work on scalable systems serving millions of users.</div>
+        <a href="/careers" class="btn-apply">Apply Now</a>
+    </div>
+    <div class="job-card">
+        <div class="job-title">Security Specialist</div>
+        <div class="job-meta">📍 New York | 💼 Full-time</div>
+        <div class="job-desc">Join our security team to protect our customers' data and prevent cyber threats. Experience with banking security is preferred.</div>
+        <a href="/careers" class="btn-apply">Apply Now</a>
+    </div>
+    <div class="job-card">
+        <div class="job-title">Product Manager</div>
+        <div class="job-meta">📍 San Francisco | 💼 Full-time</div>
+        <div class="job-desc">Lead product strategy and development for our mobile banking platform. Work cross-functionally with engineering and design teams.</div>
+        <a href="/careers" class="btn-apply">Apply Now</a>
+    </div>
+    <div class="job-card">
+        <div class="job-title">UX/UI Designer</div>
+        <div class="job-meta">📍 Remote | 💼 Full-time</div>
+        <div class="job-desc">Design intuitive and beautiful banking interfaces that delight millions of users. Portfolio showcasing fintech experience required.</div>
+        <a href="/careers" class="btn-apply">Apply Now</a>
+    </div>
+</div>
+
+<h2>Contact HR</h2>
+<div class="contact-hr">
+    <p>Interested in a role not listed above? Send your resume to <strong>careers@zu-bank.com</strong></p>
+</div>
+{% endblock %}
